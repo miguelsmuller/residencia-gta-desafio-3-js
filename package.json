@@ -1,0 +1,33 @@
+{
+  "name": "residencia-gta-desafio-3-js-pt1",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "contributors": [
+    {
+      "name": "Miguel Müller",
+      "url": "https://github.com/miguelsmuller"
+    },
+    {
+      "name": "Thais Alonso",
+      "url": "https://github.com/"
+    },
+    {
+      "name": "Carlos Lopes",
+      "url": "https://github.com/"
+    },
+    {
+      "name": "Marcel Pontes",
+      "url": "https://github.com/"
+    },
+    {
+      "name": "Heloise Meirelless",
+      "url": "https://github.com/"
+    }
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.26.0",
+    "cheerio": "1.0.0-rc.10"
+  }
+}
