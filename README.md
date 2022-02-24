@@ -9,7 +9,7 @@
 - [Thais Alonso](https://github.com/)
 - [Carlos Lopes](https://github.com/devcarlosl)
 - [Marcel Pontes](https://github.com/)
-- [Heloise Meirelles](https://github.com/)
+- [Heloise Meirelles](https://github.com/Heloisemeirelles)
 
 
 ### **Enunciado**
