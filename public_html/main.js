@@ -24,16 +24,15 @@ async function montaAppendAPI(){
   let mensagem
 
     for(var y = 0; y < pegaJson.length; y++){
-      title = JSON.stringify(pegaJson[y].title)
-      subtitle = JSON.stringify(pegaJson[y].subtitle)
-      linkArticle = JSON.stringify(pegaJson[y].linkArticle)
-      image = JSON.stringify(pegaJson[y].image)
-      //const timer = ms => new Promise(res => setTimeout(res, ms))
-        $('#areatexto').append('<div id="areatexto"><h4>Título:' + title + '</h4>')
-        for(let i = 0; i < linkArticle; i++){
-          $('#areatexto').append('<h3>Matéria relacionada:' + linkArticle[i] + '</h3>')
-        }
-        $('#areatexto').append('<div id="images"><img src="' + image + '"</div>')
-    //    await timer(2000);
+      title = pegaJson[y].title
+      subtitle = pegaJson[y].subtitle
+      linkArticle = [pegaJson[y].linkArticle]
+      image = pegaJson[y].image
+
+      $('#areatexto').append('<div id="areatexto"><h4>Título:' + title + '</h4>')
+      for(let i = 0; i < linkArticle.length > 0; i++){
+        $('#areatexto').append('<h3>Matéria relacionada:' + linkArticle[i] + '</h3>')
+      }
+      $('#areatexto').append('<div id="images"><img src="' + image + '"</div>')
     }
 }
