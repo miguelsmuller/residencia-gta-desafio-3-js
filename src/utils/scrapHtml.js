@@ -10,16 +10,20 @@ const scrapHTML = (html, $) => {
         const post = {
           image: "",
           title: "",
+          href: "",
           subtitle: "",
           linkArticle: [],
         };
 
         post.title = $(this).find(".feed-post-body-title").text();
 
+        post.href = $(this).find(".feed-post-body-title").find(".feed-post-link").attr("href");
+
         post.subtitle = $(this)
           .find(".feed-post-header")
           .find(".feed-post-header-chapeu")
           .text();
+
 
         post.image = $(this)
           .find(".bstn-fd-cover-picture")
