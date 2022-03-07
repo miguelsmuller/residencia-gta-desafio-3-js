@@ -33,7 +33,7 @@ const scrapHTML = (html, $) => {
         $(this)
           .find(".bstn-relateditems li")
           .each((id, el) => {
-            post.linkArticle.push($(el).text());
+            post.linkArticle.push($(el).find('.bstn-relatedtext').text());
           });
 
         returnedPosts.push(post);
